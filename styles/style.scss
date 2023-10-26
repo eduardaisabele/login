@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+}
+
+main {
+     display: flex;
+     width: 100vw;
+     height: 100vh;
+}
+
+.left-box {
+     width: 50vw;
+     height: 100vh;
+     background-image: url("../img/background.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     position: relative;
+
+     .title {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: -185px 0 0 -260px;
+
+          h1 {
+               font-size: 6em;
+               font-weight: 800;
+               line-height: 110px;
+               color: #fff;
+               // text-shadow: #F4CD58 0.1em 0em 0em;
+               text-shadow: 3px 4px 0 rgba(0, 0, 0, .1);
+          }
+     }
+}
+
+.right-box {
+     width: 50vw;
+     height: 100vh;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     
+     .form {
+         display: flex;
+         flex-direction: column;
+          
+          width: 60%;
+          height: 80vh;
+          h1 {
+               font-size: 3em;
+               color: #363636;
+          }
+
+          p {
+               margin: 20px 0 40px 0;
+               color: #808080;
+          }
+
+          label {
+               margin-bottom: 10px;
+               color: #808080;
+          }
+
+          input {
+               border: 1px solid #A9A9A9;
+               margin-bottom: 30px;
+               color: #363636;
+          }
+
+          button {
+               background-color: #9C4ED8;
+               border: none;
+               cursor: pointer;
+               color: #fff;
+               font-size: 1em;
+               margin-bottom: 10px;
+          }
+
+          input, button {
+               border-radius: 6px;
+               padding: 15px 20px;
+               outline: none;
+               width: 80%;
+          }
+
+          a {
+               color: #9C4ED8;
+          }
+
+          a:hover {
+               text-decoration: none;
+          }
+     }
+}
+
+@keyframes float {
+     0%, 100% {
+          transform: translateY(0);
+     }
+     50% {
+          transform: translateY(-10px);
+     }
+}

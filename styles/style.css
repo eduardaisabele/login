@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-box {
+  width: 50vw;
+  height: 100vh;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.left-box .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -185px 0 0 -260px;
+}
+.left-box .title h1 {
+  font-size: 6em;
+  font-weight: 800;
+  line-height: 110px;
+  color: #fff;
+  text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.right-box {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.right-box .form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 80vh;
+}
+.right-box .form h1 {
+  font-size: 3em;
+  color: #363636;
+}
+.right-box .form p {
+  margin: 20px 0 40px 0;
+  color: #808080;
+}
+.right-box .form label {
+  margin-bottom: 10px;
+  color: #808080;
+}
+.right-box .form input {
+  border: 1px solid #A9A9A9;
+  margin-bottom: 30px;
+  color: #363636;
+}
+.right-box .form button {
+  background-color: #9C4ED8;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+.right-box .form input, .right-box .form button {
+  border-radius: 6px;
+  padding: 15px 20px;
+  outline: none;
+  width: 80%;
+}
+.right-box .form a {
+  color: #9C4ED8;
+}
+.right-box .form a:hover {
+  text-decoration: none;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}/*# sourceMappingURL=style.css.map */
